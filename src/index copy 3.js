@@ -7,10 +7,8 @@ function Cars(props) {
 }
 
 function Garage() {
-  const [text, setText] = useState('Take the shot!');
-  const [name, setName] = useState("");
-  const [inputs, setInputs] = useState({});
 
+  const [text, setText] = useState('Take the shot!');
   const carInfo = { name: "Ford", model: "Mustang" };
   const carlist = ['Ford', 'BMW', 'Audi'];
 
@@ -24,17 +22,7 @@ function Garage() {
     in this case the 'click' event
     */
   }
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setInputs(values => ({...values, [name]: value}))
-  }
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    alert(`The name you entered was: ${name}`);
-    alert(inputs);
-  }
 
   return (
     <>
@@ -45,32 +33,7 @@ function Garage() {
       <ul>
         {carlist.map((car,index) => <Cars brand={car} key={index} />)}
       </ul>
-      <form onSubmit={handleSubmit}>
-        <label>Enter your name:
-          <input
-            type="text" 
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-          />
-        </label>
-        <label>Enter your name:
-      <input 
-        type="text" 
-        name="username" 
-        value={inputs.username || ""} 
-        onChange={handleChange}
-      />
-      </label>
-      <label>Enter your age:
-        <input 
-          type="number" 
-          name="age" 
-          value={inputs.age || ""} 
-          onChange={handleChange}
-        />
-        </label>
-        <input type="submit" />
-      </form>
+      
     </>
   );
 }

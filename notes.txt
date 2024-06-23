@@ -1,0 +1,23 @@
+
+-- Node.js is required to use create-react-app
+-- Run this command to create a React application named my-react-app:
+		npx create-react-app my-react-app
+-- move to the my-react-app directory:
+	cd my-react-app
+-- Run this command to execute the React application my-react-app:
+	npm start
+	
+-- Add React Router
+-- To add React Router in your application, run this in the terminal from the root directory of the application:
+	npm i -D react-router-dom
+
+-- Note: This tutorial uses React Router v6.
+-- If you are upgrading from v5, you will need to use the @latest flag:
+	npm i -D react-router-dom@latest
+
+-- Install Sass by running this command in your terminal:
+	npm i sass
+
+-- Note that the development build is not optimized.
+-- To create a production build, use 
+	npm run build.

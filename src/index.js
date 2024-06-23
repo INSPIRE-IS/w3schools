@@ -4,7 +4,7 @@ import { UserProvider } from "./context/UserContext";
 import '../src/css/App.css';
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import Blogs from "./pages/Blogs";
+import Todos from "./pages/Todos";
 import Contact from "./pages/Contact";
 import NoPage from "./pages/NoPage";
 
@@ -17,7 +17,7 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="blogs" element={<Blogs />} />
+          <Route path="todos" element={<Todos />} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>

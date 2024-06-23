@@ -3,13 +3,13 @@ import { Outlet, Link } from "react-router-dom";
 const Layout = () => {
   return (
     <>
-      <nav style={{flex:1,background:'red'}}>
+      <nav style={{flex:1,background:'#0095ffad'}}>
         <ul style={{flexDirection:'row',listStyle:'none'}}>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <Link to="/blogs">Blogs</Link>
+            <Link to="/todos">Add</Link>
           </li>
           <li>
             <Link to="/contact">Contact</Link>
